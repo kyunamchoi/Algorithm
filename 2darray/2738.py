@@ -1,0 +1,31 @@
+import sys
+
+N, M = map(int, sys.stdin.readline().rstrip().split())
+A, B = [], []
+
+for row in range(N):
+    row = list(map(int, sys.stdin.readline().rstrip().split()))
+    A.append(row)
+for row in range(N):
+    row = list(map(int, sys.stdin.readline().rstrip().split()))
+    B.append(row)
+for row in range(N):
+    for col in range(M):
+        print(A[row][col] + B[row][col], end=' ')
+    print()
+
+##################################################################
+
+N, M = map(int, input().split())
+A, B = [], []
+
+for row in range(N):
+    row = list(map(int, input().split()))
+    A.append(row)
+for row in range(N):
+    row = list(map(int, input().split()))
+    B.append(row)
+for row in range(N):
+    for col in range(M):
+        print(A[row][col] + B[row][col], end=' ')
+    print()
